@@ -2,6 +2,20 @@ import time
 import random
 from pynput import keyboard
 
+#
+# open text file 
+#
+lessonName = "lekcja_1"
+file = open("../language_data/" + lessonName)
+
+textArray = []
+
+for line in file:
+    textArray.append(line)
+
+print(textArray)
+
+
 
 k = keyboard.Controller()  # Create the controller
 
@@ -14,7 +28,8 @@ def type_string_with_delay(string):
 # type_string_with_delay("test message")
 
 def nextLine():
-    type_string_with_delay("Message \n")
+    message = textArray.pop(0).split(":")[1]
+    type_string_with_delay(message)
 
 def on_press(key):
     try:
