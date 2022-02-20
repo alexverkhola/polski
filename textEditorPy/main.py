@@ -18,6 +18,7 @@ text = ScrolledText(root, state='normal', height=400, width=400, wrap='word', pa
 text.pack(fill=Y, expand=1)
 text.focus_set()
 
+
 menubar = Menu(root)
 
 file_menu.main(root, text, menubar)
@@ -25,3 +26,5 @@ edit_menu.main(root, text, menubar)
 format_menu.main(root, text, menubar)
 help_menu.main(root, text, menubar)
 root.mainloop()
+
+text.insert(INSERT, "Ęęęęę")

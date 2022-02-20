@@ -2,7 +2,14 @@ from tkinter import *
 from tkinter.simpledialog import *
 from tkinter.filedialog import *
 from tkinter.messagebox import *
+import time
+import random
 
+def type_string_with_delay(self, string):
+    for character in string: 
+        delay = random.uniform(0.1, 0.3)  
+        time.sleep(delay)  
+        self.text.insert(INSERT, character)
 
 class Edit():
     def popup(self, event):
@@ -28,6 +35,14 @@ class Edit():
     def clearAll(self, *args):
         self.text.delete("1.0", END)
 
+    
+    def next(self, *args):
+        
+        for character in "ęęęęęęę": 
+            delay = random.uniform(0.1, 0.3)  
+            time.sleep(delay)  
+            self.text.insert(INSERT, character)
+
     def undo(self, *args):
         self.text.edit_undo()
 
@@ -47,6 +62,7 @@ class Edit():
                 self.text.tag_add('found', idx, lastidx)
                 idx = lastidx
             self.text.tag_config('found', foreground='white', background='blue')
+
 
     def __init__(self, text, root):
         self.clipboard = None
@@ -68,6 +84,7 @@ def main(root, text, menubar):
     editmenu.add_separator()
     editmenu.add_command(label="Select All", command=objEdit.selectAll, accelerator="Ctrl+A")
     editmenu.add_command(label="Clear All", command=objEdit.clearAll, accelerator="Ctrl+Q")
+    editmenu.add_command(label="next", command=objEdit.next, accelerator="Ctr+N")
     menubar.add_cascade(label="Edit", menu=editmenu)
 
     root.bind_all("<Control-z>", objEdit.undo)
@@ -75,6 +92,7 @@ def main(root, text, menubar):
     root.bind_all("<Control-f>", objEdit.find)
     root.bind_all("<Control-a>", objEdit.selectAll)
     root.bind_all("<Control-q>", objEdit.clearAll)
+    root.bind_all("<Control-n>", objEdit.next)
 
     objEdit.rightClick.add_command(label="Copy", command=objEdit.copy)
     objEdit.rightClick.add_command(label="Cut", command=objEdit.cut)
@@ -82,6 +100,7 @@ def main(root, text, menubar):
     objEdit.rightClick.add_separator()
     objEdit.rightClick.add_command(label="Select All", command=objEdit.selectAll)
     objEdit.rightClick.add_command(label="Clear All", command=objEdit.clearAll)
+    objEdit.rightClick.add_command(label="next", command=objEdit.next)
     objEdit.rightClick.bind("<Control-a>", objEdit.selectAll)
 
     text.bind("<Button-3>", objEdit.popup)

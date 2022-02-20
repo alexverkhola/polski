@@ -1,6 +1,8 @@
+from curses import KEY_A1
 import time
 import random
 from pynput import keyboard
+from pynput.keyboard import Key
 
 #
 # open text file 
@@ -21,7 +23,12 @@ k = keyboard.Controller()  # Create the controller
 
 def type_string_with_delay(string):
     for character in string:  # Loop over each character in the string
-        k.type(character)  # Type the character
+        # if character == "ę" : 
+        #     with k.pressed(Key.alt_r):
+        #         k.type(character)
+        #         break
+        #k.type(character)  # Type the character
+        print(character)
         delay = random.uniform(0.1, 0.3)  # Generate a random number between 0 and 10
         time.sleep(delay)  # Sleep for the amount of seconds generated
 
