@@ -47,8 +47,12 @@ public class LoadLesson implements ActionListener {
 
                         String line = in.readLine(); // read a line at a time
                         while(line != null){ // loop till you have no more lines
-                            parent.applicationData.lines.add(line); // add the line to your list
+                            // Не добавляет в список пустые и закомментированые линии
+                            if (!line.isEmpty() && !line.startsWith("//")) {
+                                parent.applicationData.lines.add(line); // add the line to your list
+                            }
                             line = in.readLine(); // try to read another line
+
                         }
                     } catch (IOException e) {
                         e.printStackTrace();

@@ -14,6 +14,13 @@ public class ActionEngine implements ActionListener {
     // Set to videopanel line of text
     private void addTextToVideoPanel() {
 
+        // Если в строке есть символ # тогда это комментарий, и строка пропускается
+        // Мы не ищем символ # в начале строки, пото му что там в начале будет стоять цифра с номером строки
+        if (parent.adminTextField.getText().contains("#")) {
+            System.out.println("Skip");
+            return;
+        }
+
         // Take string from admin window, split - take second part of string, and after strip spaces
         String word = parent.adminTextField.getText().split(":")[1].strip();
         Random random = new Random();

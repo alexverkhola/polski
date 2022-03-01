@@ -57,6 +57,7 @@ public class SmartAssistant {
 
             adminTextField.setBorder(new EmptyBorder(40, 40, 20, 20));
             adminTextField.setFont(new Font("Arial", Font.PLAIN, applicationData.fontVideoPanel));
+            adminTextField.setLineWrap(true);
             adminPanel.add(adminTextField);
             adminPanel.add(buttonPanel);
             adminPanel.setPreferredSize(new Dimension(1000, 300));

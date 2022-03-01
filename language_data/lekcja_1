@@ -1,39 +1,64 @@
--"Спасибо большое", "пожалуйста" : \n-"Dziękuję bardzo"  \n-"Proszę" 
-Польша : Polska
+// Polska, proszę, dziękuję, proszę, przepraszam, ale, mam, rozumiem, wiem
+// nie, robić, co, dobrze, wszystko, u, mnie, 
+# Первые слова
+Польша : Polska 
 Пожалуйста : proszę
 Спасибо : dziękuję
 Извините : przepraszam
 Очень : bardzo
 Спасибо большое : dziękuję bardzo
 Прошу прощения : przepraszam bardzo
-- "Спасибо большое", "пожалуйста" : -"Dziękuję bardzo" -"Proszę"
+- "Спасибо большое", "пожалуйста" : \n-"Dziękuję bardzo" \n-"Proszę"
+
+# Новые слова, очищай
+Я понимаю : rozumiem
+У меня есть : mam
+Я знаю : wiem
 
 Я не понимаю : nie rozumiem
-Я ищу : szukam
-Работа : praca
+У меня нет : nie mam
+Я не знаю : nie wiem
 
-Я ищу работу : szukam pracy
-Я работаю : pracuję
-У меня есть работа : mam pracę
-Я хочу работать : chcę pracować
-Я буду работать : będę pracować
-У меня есть работа : mam pracę
+Делать : robić
+Что : co
 
-Я могу : mogę
-Я иду : idę
-Я могу работать : mogę pracować
-Я не могу работать : nie mogę pracować
-Я иду домой : idę do domu
+Я не знаю что делать : nie wiem co robić
+У меня нет документов : nie mam dokumentów
 
-Я жду : czekam
-Я не могу : nie mogę
-Я хочу : chcę
-Я не хочу : nie chcę
-У меня есть (я имею) : mam
-Уже : już
-Завтра : jutro
-Вчера : wczoraj
+#Новые слова
+Хорошо : dobrze
+Да : так
 Всё : wszystko
-Ранее : wcześniej
-Кто здесь : kto tam
-Что я должен сделать : co powinien zrobić
+
+Я всё хорошо понимаю : wszystko dobrze rozumiem
+У меня всё есть : mam wszystko
+Я вас не понимаю, но у меня есть все документы : Nie rozumiem, ale mam wszystkie dokumenty
+Ничего не понимаю : nic nie rozumiem
+Я ничего не имею (у меня ничего нет) : nie mam nic
+Я не знаю что у меня есть (что я имею) : nie wiem co mam
+Я хорошо знаю : dobrze wiem
+Я всё хорошо знаю : wszystko dobrze wiem
+Я всё очень хорошо знаю : wiem wszystko bardzo dobrze
+Я всё очень хорошо понимаю : bardzo dobrze wszystko rozumiem
+
+#Новое словоcочитание 'у меня'
+У меня : u mnie
+У меня все хорошо : wszystko u mnie dobrze
+Спасибо большое, у меня всё есть : dziękuję bardzo, mam wszystko
+
+#Новое слово 'но', очищай
+Но : ale
+Прошу прощения, но я не понимаю : przepraszam bardzo ale nie rozumiem
+Я понимаю, но не всё : rozumiem, ale nie wszystko
+Я понимаю, но не знаю : rozumiem, ale nie wiem
+Я хорошо знаю что делать : dobrze wiem co robić
+Я не знаю что делать : nie wiem co robić
+У меня нет документов : nie mam dokumentów
+Прошу прощения, но у меня нет документов : przepraszam bardzo, ale nie mam dokumentów
+Я хоро понимаю : dobrze rozumiem
+Я не знаю что делать : nie wiem co robić
+Спасибо большое, у меня всё есть : dziękuję bardzo, mam wszystko
+У меня нет : nie mam
+У меня все хорошо : wszystko u mnie dobrze
+Спасибо большое : dziękuję bardzo
+Спасибо большое, у меня всё есть : dziękuję bardzo, mam wszystko
