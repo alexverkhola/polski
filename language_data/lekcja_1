@@ -8,11 +8,11 @@
 Очень : bardzo
 Спасибо большое : dziękuję bardzo
 Прошу прощения : przepraszam bardzo
-- "Спасибо большое", "пожалуйста" : \n-"Dziękuję bardzo" \n-"Proszę"
+-"Спасибо большое", "пожалуйста" : \n-"Dziękuję bardzo" \n-"Proszę"
 
 # Новые слова, очищай
 Я понимаю : rozumiem
-У меня есть : mam
+У меня есть (я имею) : mam
 Я знаю : wiem
 
 Я не понимаю : nie rozumiem
@@ -41,12 +41,12 @@
 Я всё очень хорошо знаю : wiem wszystko bardzo dobrze
 Я всё очень хорошо понимаю : bardzo dobrze wszystko rozumiem
 
-#Новое словоcочитание 'у меня'
+# Новое словоcочитание 'у меня'
 У меня : u mnie
 У меня все хорошо : wszystko u mnie dobrze
 Спасибо большое, у меня всё есть : dziękuję bardzo, mam wszystko
 
-#Новое слово 'но', очищай
+# Новое слово 'но', очищай
 Но : ale
 Прошу прощения, но я не понимаю : przepraszam bardzo ale nie rozumiem
 Я понимаю, но не всё : rozumiem, ale nie wszystko
