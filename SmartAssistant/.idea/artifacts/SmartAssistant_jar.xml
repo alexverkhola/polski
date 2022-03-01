@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SmartAssistant:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SmartAssistant_jar</output-path>
+    <root id="archive" name="SmartAssistant.jar">
+      <element id="module-output" name="SmartAssistant" />
+    </root>
+  </artifact>
+</component>

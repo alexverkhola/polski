@@ -12,7 +12,7 @@ public class ActionEngine implements ActionListener {
     }
 
     // Set to videopanel line of text
-    private void addTextToVideopanel() {
+    private void addTextToVideoPanel() {
 
         // Take string from admin window, split - take second part of string, and after strip spaces
         String word = parent.adminTextField.getText().split(":")[1].strip();
@@ -22,6 +22,13 @@ public class ActionEngine implements ActionListener {
         String text = parent.videoTextField.getText();
         for (int i = 0; i < word.length(); i++) {
 
+            // Разграничитель для диалогов
+            if (word.charAt(i) == '\\' && word.charAt(i+1) == 'n') {
+                text += "\n";
+                // Сдвиг для того что  бы не печатался переход на новую строку
+                i += 2;
+//                break;
+            }
             text = text + word.charAt(i);
             parent.videoTextField.setText(text);
             parent.videoTextField.update(parent.videoTextField.getGraphics());
@@ -67,7 +74,7 @@ public class ActionEngine implements ActionListener {
         if (actionEvent.getActionCommand() == "Clear") {
             clearVideoPanel();
         } else {
-            addTextToVideopanel();
+            addTextToVideoPanel();
             loadDataToAdminPanel();
         }
     }
