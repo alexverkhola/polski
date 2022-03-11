@@ -3,7 +3,7 @@
 
 // szukam, praca, pracuję, chcę, będę, ciebie, wieczór, jutro, już, tak, to, za
 
-// pan, pani, był, granicą, ma, dla, powtórzyć, nazywa, nazwisko, imię, się, myć, zakochać, stało, nic, co
+// pan, pani, był, granicą, ma, dla, nazywa, nazwisko, imię, się, myć, zakochać, stało, nic, co
 
 
 
@@ -79,8 +79,14 @@ Jak Pani ma na imię?
 Как у тебя дела? : Jak się masz?
 Как дела у господина? : Jak pan się ma?
 
-# Новое слово "говорить"
-Прости, но я больше не хочу об этом говорить. : Przepraszam, ale nie chcę już o tym rozmawiać.
-# Новое слово "повторить"
-повторить : powtórzyć
-повторите пожалуйста : proszę powtórzyć
+# Очищай
+Как тебя зовут? : Jak masz na imię?
+Как господина зовут? : Jak Pan ma na imię?
+У господина есть что то для меня ? : Czy Pan ma coś dla mnie ?
+У тебя есть что то для меня ? : Masz coś dla mnie?
+У меня есть кое что для господина (я имею что то для пана) : Mam coś dla Pana.
+Господин знает об этом? : Czy pan o tym wie?
+Ты знаешь об этом? : Wiesz o tym?
+Что случилось с господином? : Co się stało z panem?
+Ты знаешь что случилось с тем господином? : Wiesz, co się stało z tym panem?
+Ничего с ним не случилось. : Nic mu się nie stało.
